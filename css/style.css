@@ -1,0 +1,232 @@
+:root {
+  --blue: #2154D5;
+  --darkblue: #110B69;
+  --lightblue: #D4EFFF;
+  --white: #ffffff;
+		--hoverblue: #1941A7;
+}
+
+body {
+	font-family: "Fredoka", sans-serif;
+	color: var(--darkblue);
+	margin:0;
+	font-size:1.375rem;
+}
+	
+  .fredoka-regular {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" <width>;
+  }
+  .urbanist-black {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+		
+		.bgcolour-darkblue {
+			background-color: var(--darkblue);
+			color: var(--white);
+		}
+		
+		.bgcolour-lightblue {
+			background-color: var(--lightblue);
+		}		
+		
+		.bgcolour-lightblue {
+			background-color: var(--white);
+		}				
+ 
+		/*------------- navigation -------------*/
+	
+		.nav-container {
+			max-width: 1440px;
+			margin: 15px auto; 
+			display: flex; 
+			justify-content: space-between; 
+			align-items: center;
+			padding:15px 60px;
+		}
+  
+  .nav-position ol {list-style-type:none;display:flex; gap:1.5rem;}
+			
+	nav a:link, a:visited {
+		color: var(--darkblue); 
+		font-family: "Urbanist", sans-serif; 
+		font-weight:600; 
+		font-size:18px; 
+		text-decoration:none;
+	}
+	
+	nav a:hover {
+		color: var(--blue);
+	}
+	
+  a:active {}
+
+		/*------------- hero -------------*/
+		
+			a.hero-button:link, a.hero-button:visited {
+				display:block; 
+				color: var(--white); 
+				background-color: var(--blue);
+				padding: 25px 30px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				border-radius: 8px;
+				font-size:1.5rem;
+    font-family: "Urbanist", sans-serif;
+				font-weight:600;
+				letter-spacing:0.02rem;
+	  }
+			
+			a.hero-button:hover {
+				color: var(--blue); 
+				background-color: var(--lightblue);
+			}			
+				  
+	  .hero-container {
+				position: relative;
+    display: flex;
+    justify-content: center;
+				align-items: flex-end;
+    max-width: 1440px;
+    height: auto;
+    color: var(--white);
+    padding:60px 0;
+    margin: 0 auto;
+	  }
+			
+
+			
+			h1 {
+    font-family: "Urbanist", sans-serif;
+		  font-weight:900;
+		  font-size:3rem;
+		  margin-bottom:0;
+				margin-top:0;
+	  }
+			
+			h2 {
+    font-family: "Urbanist", sans-serif;
+		  font-weight:900;
+		  font-size:2.25rem;
+	  }
+	  
+			h3 {
+    font-family: "Urbanist", sans-serif;
+		  font-weight:900;
+		  font-size:1.625rem;
+	  }
+	  
+	  .hero-container p, .requestform p {
+				font-family: "Fredoka", sans-serif;
+		  font-weight:300;
+		  font-size:1.625rem;
+				line-height:1.4;
+		  margin-top:10px;
+			}
+			
+			.howdoesitwork {
+				text-align:left;
+				display:flex;
+    justify-content: space-between;
+				margin-bottom:60px;
+			}
+			
+			.howdoesitwork div {
+				max-width:345px;
+			}			
+			
+			.howdoesitwork div h3 {
+				margin-bottom:0px;
+			}
+			.howdoesitwork div p {
+				margin-top:5px;
+			}			
+			
+			.circle {
+		  height: 80px;
+		  width: 80px;
+		  background-color: var(--blue);
+				color: var(--white);
+				font-size:2.5rem;
+				font-weight:500;
+		  border-radius: 50%;
+		  display: flex;
+    align-items: center;
+    justify-content: center;
+			}
+			
+			.container {
+				padding:60px;
+				position:relative; 
+				margin:0px auto; 
+				text-align:center; 
+				max-width:1140px;
+			}			
+			
+			.mission {
+				padding:60px;
+				max-width:800px;
+				line-height:1.4;
+			}
+			
+			.mission p {
+				text-align:left;
+			}
+			
+			.about {
+				padding:60px;
+				max-width:800px;
+				line-height:1.4;
+			}
+						
+			.about p, h3 {
+				text-align:left;
+				margin-bottom:0px;
+			}		
+			
+			.about p {
+				margin-top:0;
+			}			
+			
+			.about h3 {
+				margin-top:40px;
+			}						
+			
+			.requestform {
+				position:relative;
+				margin:80px auto; 
+				text-align:center; 
+				max-width:1140px; 
+				padding:30px 0 60px 0;
+			}
+			
+			.pleasenote {
+				display:flex; 
+    flex-direction: column;
+				background-color:var(--white); 
+				border: 3px var(--darkblue) solid; 
+				border-radius:8px; 
+				text-align:left; 
+				margin:50px 0 70px 0;
+			}
+			
+			.pleasenote .title {
+				background-color:var(--darkblue);
+				color: var(--white);
+				padding:10px;
+			}
+			
+			.pleasenote .content {
+				margin: 0;
+				padding: 20px 30px 30px 30px;
+			}
+			
+			.pleasenote ul {margin-top:10px; margin-bottom:0;}
