@@ -26,6 +26,12 @@ body {
 	background-color: var(--white);
 }
 
+.logo {
+	max-width: 200px;
+	width: 100%;
+	height: auto;
+}
+
 /*------------- navigation -------------*/
 
 .nav-container {
@@ -60,18 +66,17 @@ nav a:hover {
 
 
 .hero-copy {
-	max-width:750px
+	max-width: 750px
 }
 
 a.primary-button:link,
 a.primary-button:visited {
-	display: block;
+	display: inline-block;
 	color: var(--white);
 	background-color: var(--blue);
 	padding: 25px 30px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
 	border-radius: 8px;
 	font-size: 1.5rem;
 	font-family: "Urbanist", sans-serif;
@@ -96,10 +101,15 @@ a.primary-button:hover {
 	margin: 0 auto;
 }
 
-.hero-container img {
-	margin-right:60px;
+.herovisual {
+	max-width: 180px;
+	height: auto;
+	margin-right: 60px;
 }
 
+.herovisualresponsive {
+	display: none;
+}
 
 
 h1 {
@@ -140,9 +150,9 @@ h3 {
 
 .steps {
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 	max-width: 345px;
-	width:100%;
+	width: 100%;
 }
 
 .steps h3 {
@@ -239,41 +249,39 @@ h3 {
 }
 
 .profileimg {
-	width:338px;
-	height:auto;
-	margin:30px 0 20px 0;
+	width: 338px;
+	height: auto;
+	margin: 30px 0 20px 0;
 }
 
 @media screen and (max-width: 800px) {
 	.nav-position {
-	  display:none; 
+		display: none;
 	}
+
 	.nav-container {
 		justify-content: center;
 	}
+
 	.hero-container {
 		flex-direction: column;
-		align-items:center;
-	}
-
-	.hero-container img {
-		margin-right:0px;
+		align-items: center;
 	}
 
 	.hero-copy {
-		margin-top:40px;
-		text-align:center;
+		margin-top: 40px;
+		text-align: center;
 	}
 
 	.howdoesitwork {
-		flex-direction:column;
-		margin-bottom:0px;
+		flex-direction: column;
+		margin-bottom: 0px;
 	}
 
 	.steps {
 		max-width: 100%;
-		margin-bottom:30px;
-		text-align:center;
+		margin-bottom: 30px;
+		text-align: center;
 		align-items: center;
 	}
 
@@ -281,9 +289,10 @@ h3 {
 		align-items: center;
 		justify-content: center;
 	}
+
 	.steps h3 {
 		margin-top: 20px;
-		text-align:center;
+		text-align: center;
 	}
 
 	.pleasenote {
@@ -291,15 +300,69 @@ h3 {
 	}
 
 	.profileimg {
-		width:70%;
-		height:auto;
-		margin-bottom:0px;
+		width: 70%;
+		height: auto;
+		margin-bottom: 0px;
 	}
 
-  }
+	.herovisual {
+		width: 70%;
+		margin-right: 0px;
+	}
 
-  @media screen and (max-width: 540px) {
+}
+
+@media screen and (max-width: 800px) {
+	.herovisual {
+		display: none;
+	}
+
+	.herovisualresponsive {
+		display: block;
+		width: 160px;
+		margin: 40px auto 0 auto;
+	}
+
+	h1 {
+		font-size: 2.4rem;
+	}
+
 	.profileimg {
-		width:100%;
+		width: 100%;
 	}
+
+	.logo {
+		width: 160px;
+		height: auto;
+	}
+
+	.hero-copy {
+		margin-top: 0;
+	}
+
+	.hero-container {
+		padding: 40px;
+		padding-bottom: 0;
+	}
+
+	a.primary-button:link,
+	a.primary-button:visited {
+		padding: 25px 25px;
+		font-size: 1.3rem;
+	}
+
+	.hero-container p,
+	.requestform p {
+		font-size: 1.45rem;
+		line-height: 1.3;
+	}
+
+	.pleasenote {
+		margin: 40px 0;
+	}
+
+	.container {
+		padding: 40px;
+	}
+
 }
